@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Tải</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center">
+    <button onclick="scare()">TẢI NGAY</button>
+  </div>
+
+  <img id="ghost-img" src="ghost.jpg" alt="Ghost" />
+  <audio id="ghost-sound" src="scream.mp3"></audio>
+
+  <script>
+    function scare() {
+      const img = document.getElementById('ghost-img');
+      const sound = document.getElementById('ghost-sound');
+
+      img.style.display = 'block';
+      sound.volume = 1.0;
+      sound.play();
+
+      // Có thể thêm hiệu ứng rung hoặc nhấp nháy nữa
+    }
+  </script>
+</body>
+</html>
